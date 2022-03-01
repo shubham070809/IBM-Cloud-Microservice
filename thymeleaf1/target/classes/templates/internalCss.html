@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+
+<!--NOTE 
+This name space is important and is a mandate if you are willing to use 
+thyme leaf which a templating engine 
+and in this the way we write the text para also changes -->
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+<title>Display Date</title>
+<link rel="stylesheet" th:href="@{/css/style.css}" />
+
+</head>
+<body>
+ <h3 class="funny"  th:text="'Time on the server is ' + ${theDate}" />
+ <a href="/employees/displayEmployees"><strong> Display Employees</strong></a>
+</body>
+</html>
